@@ -11,11 +11,11 @@ More examples:
 
 - run berks before running chefspec (notice: it is slow):
 
-      make run_cookbook_rspec
+      make run_cookbook_chefspec
 
 - does not run berks, so it is extremely fast, notice: after changing cookbook dependencies, you need to run: **berks vendor**:
 
-      make run_cookbook_fast_rspec
+      make run_cookbook_fast_chefspec
 
 
 ## Supported Platforms
