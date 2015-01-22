@@ -15,6 +15,7 @@ run_cookbook_rspec:
 
 run_cookbook_fast_rspec:
 	# ensure that rspec takes the most current version of myapp-example
+	if [ ! -d berks-cookbooks ]; then berks vendor ; fi ; \
 	rm -rf $(VENDORED_COOKBOOKS)/$(COOKBOOK_NAME) ; \
 	# very fast because we do not run berks before executing rspecs
 	SPEED_UP=True bundle exec rspec spec
