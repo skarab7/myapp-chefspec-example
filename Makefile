@@ -7,13 +7,13 @@ VENDORED_COOKBOOKS="berks-cookbooks"
 prepare_dev_env:
 	bundle install
 
-run_cookbook_rspec:
+run_cookbook_chefspec:
 	# NOTICE: it will be slow
 	# run it the first time you run rspec
 	# and when you change the cookbook dependences
 	bundle exec rspec spec
 
-run_cookbook_fast_rspec:
+run_cookbook_fast_chefspec:
 	# ensure that rspec takes the most current version of myapp-example
 	if [ ! -d berks-cookbooks ]; then berks vendor ; fi ; \
 	rm -rf $(VENDORED_COOKBOOKS)/$(COOKBOOK_NAME) ; \
