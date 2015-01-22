@@ -8,9 +8,7 @@ prepare_dev_env:
 	bundle install
 
 run_cookbook_chefspec:
-	# NOTICE: it will be slow
-	# run it the first time you run rspec
-	# and when you change the cookbook dependences
+	# Notice: it is slow, it runs berks every time, you call rspec
 	bundle exec rspec spec
 
 run_cookbook_fast_chefspec:

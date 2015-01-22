@@ -9,13 +9,14 @@ More examples:
 
 ## How to run chefspec:
 
-- first time and every time you change the cookbook dependences (slow):
+- run berks before running chefspec (notice: it is slow):
 
       make run_cookbook_rspec
 
-- every time (we skip running berks, so it is extremely fast):
+- does not run berks, so it is extremely fast, notice: after changing cookbook dependencies, you need to run: **berks vendor**:
 
       make run_cookbook_fast_rspec
+
 
 ## Supported Platforms
 
