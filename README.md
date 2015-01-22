@@ -1,6 +1,21 @@
 # myapp-example-cookbook
 
-TODO: Enter the cookbook description here.
+Example of a cookbook  with chefspec (in memory testing cookbook)
+
+More examples:
+
+ - https://docs.chef.io/chefspec.html
+ - https://github.com/sethvargo/chefspec/tree/master/examples
+
+## How to run chefspec:
+
+- first time and every time you change the cookbook dependences (slow):
+
+      make run_cookbook_rspec
+
+- every time (we skip running berks, so it is extremely fast):
+
+      make run_cookbook_fast_rspec
 
 ## Supported Platforms
 

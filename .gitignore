@@ -9,6 +9,7 @@ pkg/
 # Berkshelf
 .vagrant
 /cookbooks
+berks-cookbooks/
 Berksfile.lock
 
 # Bundler
@@ -16,3 +17,8 @@ Gemfile.lock
 bin/*
 .bundle/*
 
+# results of chefspec
+cookbook_rspec_results.xml
+
+# generated README.md
+README.html
